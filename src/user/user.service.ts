@@ -4,8 +4,6 @@ import { hash } from 'argon2';
 
 import { PrismaService } from '@/prisma/prisma.service';
 
-import { UpdateUserDto } from './dto/update-user.dto';
-
 @Injectable()
 export class UserService {
   public constructor(private readonly prismaService: PrismaService) {}
