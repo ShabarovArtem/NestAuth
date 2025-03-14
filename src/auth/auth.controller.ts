@@ -14,9 +14,7 @@ import { LoginDto } from '@/auth/dto/login.dto';
 
 @Controller('auth')
 export class AuthController {
-  public constructor(
-    private readonly authService: AuthService
-  ) {}
+  public constructor(private readonly authService: AuthService) {}
 
   @Post('register')
   @HttpCode(HttpStatus.OK)
